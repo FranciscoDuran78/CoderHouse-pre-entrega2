@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.imagen-tarjeta img {
+  width: 200px;
+  height: 200px;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+p {
+  margin: 10px;
+  padding: 3px;
+}
+h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 4rem;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
+}
+h2 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
+}
+h3 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 3px;
+}
+/* estilos-index */
+
+.bodyindex {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 1px;
+  grid-template-areas:
+    "nav main main"
+    "footerindex footerindex footerindex";
+  background-color: grey;
+  color: white;
+}
+.logoindex {
+  display: flex;
+  justify-content: center;
+}
+.headerindex {
+  background-color: grey;
+  color: white;
+}
+.navindex {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+}
+.navindex ul {
+  list-style-type: none;
+}
+.navindex ul li {
+  background-color: rgb(123, 119, 119);
+  border-radius: 20px;
+  text-align: center;
+}
+.navindex ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(137, 224, 255);
+  height: 15vh;
+  margin: 10px;
+  padding: 3px;
+}
+.navindex ul li a:hover {
+  background-color: #3a3b38;
+  border-radius: 20px;
+}
+
+.main {
+  grid-area: main;
+  background-color: black;
+  height: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.4fr 0.9fr 0.7fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 1px;
+  grid-template-areas:
+    "quienes_somos marca1 marca1"
+    "quienes_somos marca1 marca1";
+  margin-left: 6px;
+}
+.quienes_somos {
+  grid-area: quienes_somos;
+  background-image: url(./img/fondos/fondonav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.marca1 {
+  grid-area: marca1;
+  background-color: black;
+}
+.marca1 img {
+  width: 100%;
+  height: auto;
+}
+
+.texto-index a {
+  text-decoration: none;
+  color: rgb(137, 224, 255);
+}
+
+.footerindex {
+  grid-area: footerindex;
+  background-color: black;
+}
+/* Estilos Nosotros */
+.fondoNosotros {
+  background-color: #6a6969;
+}
+.main-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 1px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "foto1 texto1"
+    "texto2 foto2"
+    "foto3 texto3";
+  margin: 30px;
+}
+
+.foto1 {
+  grid-area: foto1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto1 img {
+  width: 250px;
+  height: 250px;
+}
+
+.texto1 {
+  grid-area: texto1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7e7e;
+}
+
+.texto2 {
+  grid-area: texto2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7e7e;
+}
+
+.foto2 {
+  grid-area: foto2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto2 img {
+  width: 200px;
+  height: 250px;
+}
+
+.foto3 {
+  grid-area: foto3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto3 img {
+  width: 250px;
+  height: 200px;
+}
+
+.texto3 {
+  grid-area: texto3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7e7e;
+}
+.texto3 h5 {
+  text-align: center;
+}
+
+/* Estilos Perifericos */
+.fondoPerifericos {
+  background-color: rgb(51, 51, 126);
+}
+.mouse {
+  background-color: rgb(84, 84, 161);
+}
+.teclado {
+  background-color: rgb(84, 84, 161);
+}
+.microfono {
+  background-color: rgb(84, 84, 161);
+}
+.auricular {
+  background-color: rgb(84, 84, 161);
+}
+.imagen-tarjeta {
+  position: relative;
+  right: 43%;
+  left: 43%;
+  bottom: 20%;
+  top: 20%;
+}
+
+/*perifericos */
+.card-v {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 25px;
+  text-align: center;
+}
+
+.card-v img {
+  width: 250px;
+  height: 250px;
+}
+
+.precio {
+  color: grey;
+  font-size: 22px;
+}
+
+.card-v a {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.mouse .card-v {
+  display: block;
+}
+
+.microfono {
+  display: block;
+}
+
+.auricular {
+  display: block;
+}
+.teclado {
+  display: block;
+}
+/* Estilos Componentes */
+
+header {
+  background-color: #f9f8fc;
+}
+
+#logo h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 58px;
+}
+
+.nav {
+  height: 60px;
+  background-color: #17181c;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: inline-block;
+  padding: 18px;
+}
+
+.nav ul li {
+  float: left;
+  margin-top: 7px;
+}
+
+.nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 18px;
+}
+
+.nav ul li a:hover {
+  background-color: #929fb3;
+}
+.formulario {
+  margin: 70px;
+  padding: 70px;
+  background-color: none;
+  color: white;
+}
+.formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fondoFormulario {
+  background-image: url(./img/fondos/SETUPgAMERP-scaled.jpg);
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: rgb(28, 28, 36);
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+/* Estilos componentes */
+.main-componentes {
+  background-image: url(./img/razerlogo.png);
+  background-size: 80px;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/* Media query index */
+@media screen and (max-width: 768px) {
+  .bodyindex {
+    display: grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.9fr 0.4fr;
+    gap: 0px 1px;
+    grid-template-areas:
+      "navindex"
+      "main"
+      "footerindex";
+  }
+  .navindex {
+    grid-area: navindex;
+    margin-right: 5%;
+  }
+  .main {
+    grid-area: main;
+    margin-left: 0px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 1, 5fr;
+    grid-template-areas:
+      "quienes-somos quienes-somos quienes-somos"
+      "marca1 marca1 marca1";
+  }
+  .footerindex {
+    grid-area: footerindex;
+  }
+  .quienes_somos {
+    grid-area: quienes-somos;
+  }
+  .marca1 {
+    grid-area: marca1;
+  }
+}
+/* Media query nosotros */
+@media screen and (max-width: 768px) {
+  .main-nosotros {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 1px;
+    grid-template-areas:
+      "foto1"
+      "texto1"
+      "foto2"
+      "texto2"
+      "foto3"
+      "texto3";
+  }
+  .foto1 {
+    grid-area: foto1;
+  }
+  .texto1 {
+    grid-area: texto1;
+  }
+  .foto2 {
+    grid-area: foto2;
+  }
+  .texto2 {
+    grid-area: texto2;
+  }
+  .foto3 {
+    grid-area: foto3;
+  }
+  .texto3 {
+    grid-area: texto3;
+  }
+}
