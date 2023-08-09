@@ -394,6 +394,13 @@ header {
   background-size: 80px;
   color: white;
 }
+.card {
+  margin: 5px;
+}
+.card:hover {
+  transform: scale(1.15);
+  transition: all 0.3s;
+}
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
