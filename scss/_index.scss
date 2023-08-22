@@ -1,0 +1,95 @@
+.bodyindex {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 1px;
+    grid-template-areas: "nav main main" "footerindex footerindex footerindex";
+    background-color: black;
+    color: white;
+  }
+  
+  .logoindex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .headerindex {
+    background: linear-gradient(to left, black, rgb(48, 2, 81));
+    color: white;
+  }
+  
+  .navindex {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+  
+    ul {
+      list-style-type: none;
+  
+      li {
+        background-color: rgb(48, 2, 81);
+        border-radius: 20px;
+        text-align: center;
+        margin: 10px;
+  
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          height: 15vh;
+          padding: 3px;
+          border: solid indigo;
+          border-radius: 20px;
+          transition: 1s ease;
+  
+          &:hover {
+            background-color: rgb(48, 5, 48);
+            border-radius: 30px;
+            color: violet;
+          }
+        }
+      }
+    }
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: black;
+    height: 100%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1.4fr 0.9fr 0.7fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 1px;
+    grid-template-areas: "quienes_somos marca1 marca1" "quienes_somos marca1 marca1";
+    margin-left: 6px;
+  }
+  
+  .quienes_somos {
+    grid-area: quienes_somos;
+    background: linear-gradient(to right, black, rgb(11, 11, 68));
+  }
+  
+  .marca1 {
+    grid-area: marca1;
+    background-color: black;
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .texto-index a {
+    text-decoration: none;
+    color: rgb(137, 224, 255);
+  }
+  
+  .footerindex {
+    grid-area: footerindex;
+    background-color: black;
+  }
+  

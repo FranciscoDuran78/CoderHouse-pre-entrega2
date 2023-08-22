@@ -3,39 +3,44 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .imagen-tarjeta img {
   width: 200px;
   height: 200px;
 }
+
 * {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
+
 p {
   margin: 10px;
   padding: 3px;
 }
+
 h1 {
+  padding: 3px;
+  margin: 10px;
   font-family: "Belanosima", sans-serif;
+  text-align: center;
   font-size: 4rem;
-  align-items: center;
-  text-align: center;
-  margin: 10px;
-  padding: 3px;
 }
+
 h2 {
+  padding: 3px;
+  margin: 10px;
   font-family: "Belanosima", sans-serif;
+  text-align: center;
   font-size: 3rem;
-  text-align: center;
-  margin: 10px;
-  padding: 3px;
 }
+
 h3 {
-  font-family: "Belanosima", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 10px;
   padding: 3px;
+  margin: 10px;
+  font-family: "Belanosima", sans-serif;
+  text-align: center;
+  font-size: 2rem;
 }
 
 img {
@@ -44,7 +49,6 @@ img {
   margin: 10px;
   padding: 3px;
 }
-/* estilos-index */
 
 .bodyindex {
   display: grid;
@@ -52,20 +56,21 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 0.5fr;
   gap: 0px 1px;
-  grid-template-areas:
-    "nav main main"
-    "footerindex footerindex footerindex";
-  background-color: grey;
+  grid-template-areas: "nav main main" "footerindex footerindex footerindex";
+  background-color: black;
   color: white;
 }
+
 .logoindex {
   display: flex;
   justify-content: center;
 }
+
 .headerindex {
-  background-color: grey;
+  background: linear-gradient(to left, black, rgb(48, 2, 81));
   color: white;
 }
+
 .navindex {
   grid-area: nav;
   display: flex;
@@ -75,23 +80,27 @@ img {
   list-style-type: none;
 }
 .navindex ul li {
-  background-color: rgb(123, 119, 119);
+  background-color: rgb(48, 2, 81);
   border-radius: 20px;
   text-align: center;
+  margin: 10px;
 }
 .navindex ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: rgb(137, 224, 255);
+  color: white;
   height: 15vh;
-  margin: 10px;
   padding: 3px;
+  border: solid indigo;
+  border-radius: 20px;
+  transition: 1s ease;
 }
 .navindex ul li a:hover {
-  background-color: #3a3b38;
-  border-radius: 20px;
+  background-color: rgb(48, 5, 48);
+  border-radius: 30px;
+  color: violet;
 }
 
 .main {
@@ -103,24 +112,22 @@ img {
   grid-template-columns: 1.4fr 0.9fr 0.7fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 1px;
-  grid-template-areas:
-    "quienes_somos marca1 marca1"
-    "quienes_somos marca1 marca1";
+  grid-template-areas: "quienes_somos marca1 marca1" "quienes_somos marca1 marca1";
   margin-left: 6px;
 }
+
 .quienes_somos {
   grid-area: quienes_somos;
-  background-image: url(./img/fondos/fondonav.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to right, black, rgb(11, 11, 68));
 }
+
 .marca1 {
   grid-area: marca1;
   background-color: black;
 }
 .marca1 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .texto-index a {
@@ -132,10 +139,11 @@ img {
   grid-area: footerindex;
   background-color: black;
 }
-/* Estilos Nosotros */
+
 .fondoNosotros {
   background-color: #6a6969;
 }
+
 .main-nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -143,10 +151,7 @@ img {
   grid-auto-columns: 1fr;
   gap: 0px 1px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "foto1 texto1"
-    "texto2 foto2"
-    "foto3 texto3";
+  grid-template-areas: "foto1 texto1" "texto2 foto2" "foto3 texto3";
   margin: 30px;
 }
 
@@ -209,127 +214,44 @@ img {
 .texto3 h5 {
   text-align: center;
 }
+.headercomponentes{
+  background-color: rgb(40, 39, 39);
+  color: white;
+}
+.main-componentes {
+  background-image: url(../pages/img/razerlogo.png);
+  background-size: 80px;
+  color: white;
+}
 
-/* Estilos Perifericos */
+.card {
+  margin: 5px;
+}
+.card:hover {
+  transform: scale(1.15);
+  transition: all 0.3s;
+}
+
 .fondoPerifericos {
   background-color: rgb(51, 51, 126);
 }
-.mouse {
+
+.mouse, .teclado, .microfono, .auricular {
   background-color: rgb(84, 84, 161);
 }
-.teclado {
-  background-color: rgb(84, 84, 161);
-}
-.microfono {
-  background-color: rgb(84, 84, 161);
-}
-.auricular {
-  background-color: rgb(84, 84, 161);
-}
-.imagen-tarjeta {
-  position: relative;
-  right: 43%;
-  left: 43%;
-  bottom: 20%;
-  top: 20%;
-}
 
-/*perifericos */
-.card-v {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: 25px;
-  text-align: center;
-}
-
-.card-v img {
-  width: 250px;
-  height: 250px;
-}
-
-.precio {
-  color: grey;
-  font-size: 22px;
-}
-
-.card-v a {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background: none;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.mouse .card-v {
-  display: block;
-}
-
-.microfono {
-  display: block;
-}
-
-.auricular {
-  display: block;
-}
-.teclado {
-  display: block;
-}
-/* Estilos Componentes */
-
-header {
-  background-color: #f9f8fc;
-}
-
-#logo h1 {
-  font-family: "Pacifico", cursive;
-  font-size: 58px;
-}
-
-.nav {
-  height: 60px;
-  background-color: #17181c;
-  text-align: center;
-}
-
-.nav ul {
-  list-style: none;
-  display: inline-block;
-  padding: 18px;
-}
-
-.nav ul li {
-  float: left;
-  margin-top: 7px;
-}
-
-.nav ul li a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 18px;
-}
-
-.nav ul li a:hover {
-  background-color: #929fb3;
-}
 .formulario {
   margin: 70px;
   padding: 70px;
   background-color: none;
   color: white;
-}
-.formulario {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .fondoFormulario {
-  background-image: url(./img/fondos/SETUPgAMERP-scaled.jpg);
+  background-image: url(../pages/img/fondos/SETUPgAMERP-scaled.jpg);
 }
 
 .pie-pagina {
@@ -388,19 +310,7 @@ header {
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
-/* Estilos componentes */
-.main-componentes {
-  background-image: url(./img/razerlogo.png);
-  background-size: 80px;
-  color: white;
-}
-.card {
-  margin: 5px;
-}
-.card:hover {
-  transform: scale(1.15);
-  transition: all 0.3s;
-}
+
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -418,14 +328,15 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 1.9fr 0.4fr;
     gap: 0px 1px;
-    grid-template-areas:
-      "navindex"
-      "main"
-      "footerindex";
+    grid-template-areas: "navindex" "main" "footerindex";
   }
   .navindex {
     grid-area: navindex;
     margin-right: 5%;
+  }
+  .headerindex {
+    background: linear-gradient(rgb(48, 2, 81), black);
+    color: white;
   }
   .main {
     grid-area: main;
@@ -434,15 +345,14 @@ header {
     grid-auto-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-columns: 0.5fr 1, 5fr;
-    grid-template-areas:
-      "quienes-somos quienes-somos quienes-somos"
-      "marca1 marca1 marca1";
+    grid-template-areas: "quienes-somos quienes-somos quienes-somos" "marca1 marca1 marca1";
   }
   .footerindex {
     grid-area: footerindex;
   }
   .quienes_somos {
     grid-area: quienes-somos;
+    background: linear-gradient(black, rgb(11, 11, 68));
   }
   .marca1 {
     grid-area: marca1;
@@ -456,13 +366,7 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 1px;
-    grid-template-areas:
-      "foto1"
-      "texto1"
-      "foto2"
-      "texto2"
-      "foto3"
-      "texto3";
+    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
   }
   .foto1 {
     grid-area: foto1;
@@ -482,4 +386,4 @@ header {
   .texto3 {
     grid-area: texto3;
   }
-}
+}/*# sourceMappingURL=style.css.map */

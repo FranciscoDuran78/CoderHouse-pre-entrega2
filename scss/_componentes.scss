@@ -1,0 +1,14 @@
+.main-componentes {
+    background-image: url(./img/razerlogo.png);
+    background-size: 80px;
+    color: white;
+  }
+  .card {
+    margin: 5px;
+  
+    &:hover {
+      transform: scale(1.15);
+      transition: all 0.3s;
+    }
+  }
+    

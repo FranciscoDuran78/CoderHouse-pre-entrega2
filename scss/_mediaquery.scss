@@ -1,0 +1,91 @@
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }
+  
+  /* Media query index */
+  @media screen and (max-width: 768px) {
+    .bodyindex {
+      display: grid;
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.7fr 1.9fr 0.4fr;
+      gap: 0px 1px;
+      grid-template-areas: "navindex" "main" "footerindex";
+    }
+  
+    .navindex {
+      grid-area: navindex;
+      margin-right: 5%;
+    }
+  
+    .headerindex {
+      background: linear-gradient(rgb(48, 2, 81), black);
+      color: white;
+    }
+  
+    .main {
+      grid-area: main;
+      margin-left: 0px;
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-columns: 0.5fr 1, 5fr;
+      grid-template-areas: "quienes-somos quienes-somos quienes-somos" "marca1 marca1 marca1";
+    }
+  
+    .footerindex {
+      grid-area: footerindex;
+    }
+  
+    .quienes_somos {
+      grid-area: quienes-somos;
+      background: linear-gradient(black, rgb(11, 11, 68));
+    }
+  
+    .marca1 {
+      grid-area: marca1;
+    }
+  }
+  
+  /* Media query nosotros */
+  @media screen and (max-width: 768px) {
+    .main-nosotros {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 1px;
+      grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
+    }
+  
+    .foto1 {
+      grid-area: foto1;
+    }
+  
+    .texto1 {
+      grid-area: texto1;
+    }
+  
+    .foto2 {
+      grid-area: foto2;
+    }
+  
+    .texto2 {
+      grid-area: texto2;
+    }
+  
+    .foto3 {
+      grid-area: foto3;
+    }
+  
+    .texto3 {
+      grid-area: texto3;
+    }
+  }
+  
