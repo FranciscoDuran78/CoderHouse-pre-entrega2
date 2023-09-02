@@ -1,14 +1,19 @@
 .main-componentes {
-    background-image: url(./img/razerlogo.png);
-    background-size: 80px;
-    color: white;
+  background-color: #bed5cd;
+  color: black;
+  margin: auto;
+  margin-top: 90px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.card {
+  margin: 10px;
+
+  &:hover {
+    transform: scale(1.15);
+    transition: all 0.3s;
   }
-  .card {
-    margin: 5px;
-  
-    &:hover {
-      transform: scale(1.15);
-      transition: all 0.3s;
-    }
-  }
-    
+}
+body {
+  overflow-x: hidden;
+}

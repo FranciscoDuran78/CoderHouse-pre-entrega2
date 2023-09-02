@@ -1,91 +1,148 @@
 @media screen and (max-width: 800px) {
-    .pie-pagina .grupo-1 {
-      width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 30px;
-      padding: 35px 0px;
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+/* Media query index */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+  .nav-index {
+    padding: 5px !important;
+  }
+  .main {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 0px 1px;
+    grid-template-areas:
+      "paralax paralax paralax"
+      "quienes_somos quienes_somos quienes_somos"
+      "marca1 marca1 marca1";
+  }
+  .quienes_somos {
+    grid-area: quienes_somos;
+    margin: 0;
+  }
+  .primer-texto {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    height: 100%;
+    width: 90%;
+    background-color: #183d3d;
+    color: white;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 10px;
+    box-shadow: black;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .logoindex img {
+    width: 50%;
+    height: 50%;
+  }
+}
+.paralax {
+  grid-area: paralax;
+}
+.marca1 {
+  grid-area: marca1;
+}
+
+/* Media query nosotros */
+@media screen and (max-width: 768px) {
+  .main-nosotros {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+    gap: 0px 1px;
+    grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
+  }
+
+  .foto1 {
+    grid-area: foto1;
+  }
+  .texto1 {
+    grid-area: texto1;
+    font-size: 0.5rem;
+    h5 {
+      margin: 10px;
     }
   }
-  
-  /* Media query index */
-  @media screen and (max-width: 768px) {
-    .bodyindex {
-      display: grid;
-      display: grid;
-      grid-auto-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.7fr 1.9fr 0.4fr;
-      gap: 0px 1px;
-      grid-template-areas: "navindex" "main" "footerindex";
-    }
-  
-    .navindex {
-      grid-area: navindex;
-      margin-right: 5%;
-    }
-  
-    .headerindex {
-      background: linear-gradient(rgb(48, 2, 81), black);
-      color: white;
-    }
-  
-    .main {
-      grid-area: main;
-      margin-left: 0px;
-      display: grid;
-      grid-auto-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-columns: 0.5fr 1, 5fr;
-      grid-template-areas: "quienes-somos quienes-somos quienes-somos" "marca1 marca1 marca1";
-    }
-  
-    .footerindex {
-      grid-area: footerindex;
-    }
-  
-    .quienes_somos {
-      grid-area: quienes-somos;
-      background: linear-gradient(black, rgb(11, 11, 68));
-    }
-  
-    .marca1 {
-      grid-area: marca1;
+
+  .foto2 {
+    grid-area: foto2;
+  }
+
+  .texto2 {
+    grid-area: texto2;
+    font-size: 0.5rem;
+    h5 {
+      margin: 10px;
     }
   }
-  
-  /* Media query nosotros */
-  @media screen and (max-width: 768px) {
-    .main-nosotros {
-      display: grid;
-      grid-auto-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      gap: 0px 1px;
-      grid-template-areas: "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
-    }
-  
-    .foto1 {
-      grid-area: foto1;
-    }
-  
-    .texto1 {
-      grid-area: texto1;
-    }
-  
-    .foto2 {
-      grid-area: foto2;
-    }
-  
-    .texto2 {
-      grid-area: texto2;
-    }
-  
-    .foto3 {
-      grid-area: foto3;
-    }
-  
-    .texto3 {
-      grid-area: texto3;
+
+  .foto3 {
+    grid-area: foto3;
+  }
+
+  .texto3 {
+    grid-area: texto3;
+    font-size: 0.5rem;
+    h5 {
+      margin: 10px;
     }
   }
+}
+/*Media query para overflow*/
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+/*Media query Componentes*/
+@media (max-width: 768px) {
+  .main-componentes {
+    margin-top: 47px;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .main-componentes {
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+/* Media query Perifericos */
+@media (max-width: 768px) {
+  .main-perifericos {
+    margin-top: 47px;
+    overflow: auto;
+    overflow-x: hidden;
+    white-space: normal;
+  }
+}
+@media (max-width: 400px) {
+  .main-perifericos {
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+/* Media query Formulario */
+@media (max-width: 768px){
   
+}
+

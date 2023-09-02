@@ -1,5 +1,5 @@
 .fondoNosotros {
-  background-color: #6a6969;
+  background-color: #93b1a6;
 }
 
 .main-nosotros {
@@ -12,7 +12,9 @@
   grid-template-areas: "foto1 texto1" "texto2 foto2" "foto3 texto3";
   margin: 30px;
 }
-
+.titulo-nosotros {
+  margin-top: 100px;
+}
 .foto1 {
   grid-area: foto1;
   display: flex;
@@ -26,20 +28,36 @@
 }
 
 .texto1 {
+  color: white;
   grid-area: texto1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7e7e7e;
+  background-color: #183d3d;
+  border-radius: 20px;
+  padding: 10px;
+  h5 {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 .texto2 {
+  color: white;
   grid-area: texto2;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7e7e7e;
+  background-color: #183d3d;
+  border-radius: 20px;
+  padding: 10px;
+  h5 {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
+ 
 
 .foto2 {
   grid-area: foto2;
@@ -64,15 +82,19 @@
     height: 200px;
   }
 }
-
 .texto3 {
+  color: white;
   grid-area: texto3;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7e7e7e;
+  background-color: #183d3d;
+  border-radius: 20px;
+  padding: 10px;
 
   h5 {
-    text-align: center;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
   }
 }
